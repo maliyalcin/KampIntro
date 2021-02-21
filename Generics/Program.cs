@@ -54,12 +54,5 @@ namespace Generics
             get { return _array.Length; }
 
         }
-
-        
-
-
-
     }
-
-    
 }
