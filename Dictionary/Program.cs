@@ -17,6 +17,21 @@ namespace Dictionary
             {
                 Console.WriteLine(item);
             }
+
+            if (ilPlaka.ContainsKey("Artvin")) // İstediğimiz ilin plaka numarası için...
+            {
+                string il = "Artvin";
+                int value = ilPlaka["Artvin"];
+                Console.WriteLine(il + "ilinin plakası :" + value);
+            }
+
+            if (ilPlaka.ContainsValue(34)) // ContainsValue kullanımı...
+            {
+                Console.WriteLine(true);
+            }
+
+            Console.WriteLine(ilPlaka.Count); // Listedeki eleman sayısı için...
         }
+
     }
 }
